@@ -1,0 +1,19 @@
+{
+  "developer": "齐赛军",
+  "github": "BigQ749",
+  "privacySite": "https://bigq749.github.io/<仓库名>/",
+  "deveco": "E:/APP/DevEco Studio",
+  "sdk": "E:/APP/DevEco Studio/sdk",
+  "hvigor": "E:/APP/DevEco Studio/tools/hvigor/bin/hvigorw.bat",
+  "java": "E:/APP/DevEco Studio/jbr/bin/java.exe",
+  "signJar": "E:/APP/DevEco Studio/sdk/default/openharmony/toolchains/lib/hap-sign-tool.jar",
+  "hdc": "E:/APP/DevEco Studio/sdk/default/openharmony/toolchains/hdc.exe",
+  "emulator": "E:/APP/DevEco Studio/tools/emulator/Emulator.exe",
+  "keystore": "D:/APP/zhugu/.sdks/harmony-sign/duanti.p12",
+  "keyAlias": "duanti",
+  "passwordFile": "D:/APP/zhugu/.sdks/harmony-sign/password.txt",
+  "cert": "D:/APP/zhugu/.sdks/harmony-sign/duanti.cer",
+  "compatibleSdk": "5.0.0(12)",
+  "targetSdk": "26.0.0",
+  "productsRoot": "D:/APP"
+}

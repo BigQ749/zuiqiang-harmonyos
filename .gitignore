@@ -1,0 +1,5 @@
+node_modules/
+*.p12
+*.p7b
+password.txt
+*.cer
