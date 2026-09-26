@@ -10,7 +10,7 @@ description: >-
 
 一次只动一个产品目录。先读那个目录更近的说明。不要把别的产品文案抄过来。
 
-做界面先读 [taste.md](taste.md) 和 [preview.md](preview.md)。他说 iOS 风格一时读 [styles.md](styles.md) 的风格一，说风格二就读风格二，两套导航都不要混。名字没定先读 [naming.md](naming.md)，给出 10 个名称和包名，等他圈一个再写进工程。做壳和白屏先读 [shell.md](shell.md)。图标读 [icons.md](icons.md)。介绍图读 [shots.md](shots.md)。填商店先读 [agc.md](agc.md)。隐私标签读 [privacy-label.md](privacy-label.md)。签名前用 [rejects.md](rejects.md) 过一遍。已做过的产品只作对照，读 [products.md](products.md)。
+做界面先读 [taste.md](taste.md) 和 [preview.md](preview.md)。他说 iOS 风格一、二或三时读 [styles.md](styles.md) 里对应的那一套，三套不要混。名字没定先读 [naming.md](naming.md)，给出 10 个名称和包名，等他圈一个再写进工程。做壳和白屏先读 [shell.md](shell.md)。图标读 [icons.md](icons.md)。介绍图读 [shots.md](shots.md)。填商店先读 [agc.md](agc.md)。隐私标签读 [privacy-label.md](privacy-label.md)。签名前用 [rejects.md](rejects.md) 过一遍。已做过的产品只作对照，读 [products.md](products.md)。
 
 ## 锁死的默认
 
