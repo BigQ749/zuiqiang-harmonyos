@@ -1,0 +1,29 @@
+{
+  "base": "http://127.0.0.1:5188",
+  "storageKey": "换成这个应用自己的 localStorage 键",
+  "outDir": "store/华为介绍图",
+  "desktopFolder": "应用名-介绍图",
+  "kicker": "应用名",
+  "ground": "#f3f1ee",
+  "ink": "#1d1d1f",
+  "accent": "#c23b22",
+  "ready": ".app-root",
+  "shotClass": "is-native is-shot",
+  "headless": false,
+  "seed": {},
+  "shots": [
+    {
+      "file": "01-开场.png",
+      "title": "四个字以内",
+      "sub": "一句人话，不要口号。",
+      "url": "/?shot=1",
+      "welcome": true
+    },
+    {
+      "file": "02-主页.png",
+      "title": "主页在这",
+      "sub": "这一屏在干什么。",
+      "url": "/"
+    }
+  ]
+}

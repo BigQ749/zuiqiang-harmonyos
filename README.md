@@ -14,11 +14,16 @@
 |---|---|
 | SKILL.md | 接到要求后怎么做，默认全部锁死 |
 | taste.md | 界面喜好：纸色、松绿、浮起的底栏、新用户第一屏 |
+| preview.md | 电脑上打开要像一台鸿蒙真机 |
 | shell.md | 白屏、画不出、卡顿的已验证做法 |
-| agc.md | 华为后台每一栏怎么填 |
-| products.md | 已做产品的目录和包名，禁止再犯的坑 |
+| icons.md | 直角 216 / 1024，和包内同一张 |
+| shots.md | 1080×1920 介绍图，同一只手机框 |
+| agc.md | 华为后台每一栏、一句话、介绍怎么填 |
+| rejects.md | 以前被打回的错，签名前必查 |
+| products.md | 已做产品的目录和包名 |
 | defaults.json | 本机 DevEco、证书路径。不含口令 |
-| scripts/write-listing.mjs | 一次写出商店文案、AGC 填写和隐私页 |
+| scripts/write-listing.mjs | 一次写出一句话、介绍、AGC 填写和隐私页 |
+| scripts/store-posters.mjs | 按真界面套手机框，出 1080×1920 介绍图 |
 | store/app.example.json | 上面脚本的例子 |
 
 口令、p12、p7b 不在这个仓库里。

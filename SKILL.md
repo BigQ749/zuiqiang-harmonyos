@@ -1,7 +1,7 @@
 ---
 name: zuqiang-harmonyos
 description: >-
-  最强鸿蒙开发。主人说出要求后，直接做出能在鸿蒙手机打开、并按华为应用市场上架的单机 App：网页壳、他的界面习惯、包名、发布签名、商店文案、截图、隐私页、AGC 每栏。Use when 做鸿蒙、鸿蒙 App、HarmonyOS、华为应用市场、AGC、上架、HAP、上传包、想吃先停、正确时刻、锻体、下节课、月信、课时、场记、领宠、边译。
+  最强鸿蒙开发。主人说出要求后，直接做出能在鸿蒙手机打开、并按华为应用市场上架的单机 App：好看的网页真机、图标、介绍截图、一句话和介绍、包名、发布签名、隐私页、AGC 每栏，并避开以前被打回的错。Use when 做鸿蒙、鸿蒙 App、HarmonyOS、华为应用市场、AGC、上架、HAP、上传包、应用图标、介绍图、一句话简介、想吃先停、正确时刻、锻体、下节课、月信、课时、场记、领宠、边译。
 ---
 
 # 最强鸿蒙开发
@@ -10,7 +10,7 @@ description: >-
 
 一次只动一个产品目录。先读那个目录更近的说明。不要把别的产品文案抄过来。
 
-做界面先读 [taste.md](taste.md)。做壳和白屏先读 [shell.md](shell.md)。填商店先读 [agc.md](agc.md)。已做过的产品只作对照，读 [products.md](products.md)，不要重踩。
+做界面先读 [taste.md](taste.md) 和 [preview.md](preview.md)。做壳和白屏先读 [shell.md](shell.md)。图标读 [icons.md](icons.md)。介绍图读 [shots.md](shots.md)。填商店先读 [agc.md](agc.md)。签名前用 [rejects.md](rejects.md) 过一遍。已做过的产品只作对照，读 [products.md](products.md)。
 
 ## 锁死的默认
 
@@ -25,12 +25,13 @@ description: >-
 
 ## 同一轮做到哪
 
-1. 在产品目录写出能点的主路径。新用户打开就看见正事（有东西在动的那一页），列表和「新建」藏在明显按钮后面。
-2. 浏览器里点通主路径、空态、点错。
+1. 在产品目录写出能点的主路径。电脑打开是一台好看的鸿蒙手机，见 [preview.md](preview.md)。新用户第一眼是正事，不是空列表。
+2. 浏览器里点通主路径、空态、点错。把本地地址告诉他。
 3. 打成一条 IIFE，拷进 `harmony/.../rawfile`，壳按 [shell.md](shell.md)。
-4. `hvigorw assembleApp` 打未签名 `.app`，再用发布证书签到桌面：`<中文名>上传包.app`。
-5. 在产品里建 `store/`，用 [scripts/write-listing.mjs](scripts/write-listing.mjs) 写出一句话、介绍、AGC 填写、隐私页。介绍必须和真界面一致。
-6. 他要看模拟器时再开。没说就不要开。
+4. 图标按 [icons.md](icons.md)：直角 1024 和 216，和包内是同一张。介绍图按 [shots.md](shots.md)：5 张 1080×1920，同一只手机框。
+5. `hvigorw assembleApp` 打未签名 `.app`。先过 [rejects.md](rejects.md)，再用发布证书签到桌面：`<中文名>上传包.app`。
+6. 在产品里建 `store/`，用 [scripts/write-listing.mjs](scripts/write-listing.mjs) 写出一句话（≤17 字）、应用介绍、AGC 填写、隐私页。介绍必须和真界面一致。
+7. 他要看模拟器时再开。没说就不要开。
 
 ## 验收
 
@@ -38,7 +39,7 @@ description: >-
 - 真机壳里没有第二套电量、没有浏览器假手机框。
 - 底栏是浮起的圆角条，不盖住系统那条横杠。
 - 桌面上的包是签过名的 `.app`，不是 unsigned。
-- `store/` 里每栏都有能直接粘贴的字。
+- `store/` 里有一句话、介绍、AGC 填写、隐私页、直角图标、五张介绍图。
 
 ## 禁止
 
