@@ -1,5 +1,5 @@
 ---
-name: zuqiang-harmonyos
+name: zuiqiang-harmonyos
 description: >-
   最强鸿蒙开发。主人说出要求后，直接做出能在鸿蒙手机打开、并按华为应用市场上架的单机 App：好看的网页真机、图标、介绍截图、一句话和介绍、包名、发布签名、隐私页、AGC 每栏，并避开以前被打回的错。Use when 做鸿蒙、鸿蒙 App、HarmonyOS、华为应用市场、AGC、上架、HAP、上传包、应用图标、介绍图、一句话简介、想吃先停、正确时刻、锻体、下节课、月信、课时、场记、领宠、边译。
 ---
@@ -30,7 +30,7 @@ description: >-
 3. 打成一条 IIFE，拷进 `harmony/.../rawfile`，壳按 [shell.md](shell.md)。
 4. 图标按 [icons.md](icons.md)：直角 1024 和 216，和包内是同一张。介绍图按 [shots.md](shots.md)：5 张 1080×1920，同一只手机框。
 5. `hvigorw assembleApp` 打未签名 `.app`。先过 [rejects.md](rejects.md)，再用发布证书签到桌面：`<中文名>上传包.app`。
-6. 在产品里建 `store/`，用 [scripts/write-listing.mjs](scripts/write-listing.mjs) 写出一句话（≤17 字）、应用介绍、AGC 填写、隐私页。介绍必须和真界面一致。
+6. 在产品里建 `store/`，用 [scripts/write-listing.mjs](scripts/write-listing.mjs) 写出一句话（≤17 字）、应用介绍、AGC 填写。再用 [scripts/publish-privacy.mjs](scripts/publish-privacy.mjs) 把隐私页推到 GitHub Pages，得到 `https://bigq749.github.io/<名字>-privacy/`，写进 AGC。介绍必须和真界面一致。
 7. 他要看模拟器时再开。没说就不要开。
 
 ## 验收
@@ -39,7 +39,7 @@ description: >-
 - 真机壳里没有第二套电量、没有浏览器假手机框。
 - 底栏是浮起的圆角条，不盖住系统那条横杠。
 - 桌面上的包是签过名的 `.app`，不是 unsigned。
-- `store/` 里有一句话、介绍、AGC 填写、隐私页、直角图标、五张介绍图。
+- `store/` 里有一句话、介绍、AGC 填写、直角图标、五张介绍图，以及一条已公开的 `https://bigq749.github.io/<名字>-privacy/`。
 
 ## 禁止
 

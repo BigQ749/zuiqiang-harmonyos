@@ -9,13 +9,18 @@ if (!file) {
 
 const app = JSON.parse(fs.readFileSync(file, "utf8"));
 const dir = path.dirname(path.resolve(file));
-const need = ["name", "bundle", "oneLine", "intro", "dataItems", "privacyUrl"];
+const need = ["name", "bundle", "oneLine", "intro", "dataItems"];
 for (const key of need) {
   if (!app[key]) {
     console.error("缺少 " + key);
     process.exit(1);
   }
 }
+if (!app.privacyRepo || !/^[a-z0-9]+-privacy$/.test(app.privacyRepo)) {
+  console.error("privacyRepo 要像 bianyi-privacy 这样，以 -privacy 结尾");
+  process.exit(1);
+}
+app.privacyUrl = `https://bigq749.github.io/${app.privacyRepo}/`;
 if ([...app.oneLine].length > 17) {
   console.error("一句话超过 17 字：" + app.oneLine);
   process.exit(1);

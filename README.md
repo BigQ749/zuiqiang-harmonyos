@@ -22,7 +22,8 @@
 | rejects.md | 以前被打回的错，签名前必查 |
 | products.md | 已做产品的目录和包名 |
 | defaults.json | 本机 DevEco、证书路径。不含口令 |
-| scripts/write-listing.mjs | 一次写出一句话、介绍、AGC 填写和隐私页 |
+| scripts/write-listing.mjs | 一次写出一句话、介绍和 AGC 填写 |
+| scripts/publish-privacy.mjs | 推到 GitHub Pages，得到 https://bigq749.github.io/名字-privacy/ |
 | scripts/store-posters.mjs | 按真界面套手机框，出 1080×1920 介绍图 |
 | store/app.example.json | 上面脚本的例子 |
 

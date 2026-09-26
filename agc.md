@@ -18,7 +18,11 @@
 
 ## 隐私网址
 
-应用内页面不算。要一条公网 https。做法：GitHub 仓库名 `<产品>-privacy`，Pages 用 main 根目录，地址 `https://bigq749.github.io/<仓库>/`。隐私政策和权利填同一个网址。
+应用内页面不算。要一条和边译一样的公网地址：`https://bigq749.github.io/<英文名>-privacy/`。
+
+例如边译是 https://bigq749.github.io/bianyi-privacy/ 。
+
+做法：`store/app.json` 里写 `privacyRepo`，例如 `bianyi-privacy`。然后跑 `scripts/publish-privacy.mjs`。它会新建公开仓库，把 `index.html` 推到 main 根目录，并打开 GitHub Pages。隐私政策和权利填这同一个网址。刚发布的一两分钟内打开可能还是空白，过一会儿就能开。
 
 正文写清：存哪些字、不上传、不广告、删掉的办法是应用里清掉或卸载、开发者齐赛军、包名。
 

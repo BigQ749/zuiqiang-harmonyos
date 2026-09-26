@@ -5,6 +5,6 @@
   "oneLine": "打开就能把这件事做完",
   "intro": "这是给自己用的本机记录。打开就能看到当前这件事。写下的内容只留在这台手机里，不上传，不需要注册。",
   "dataItems": ["你写下的文字", "日期"],
-  "privacyUrl": "https://bigq749.github.io/example-privacy/",
+  "privacyRepo": "example-privacy",
   "firstVersion": "可以记下这件事，记录只留在这台手机。"
 }
