@@ -10,14 +10,14 @@ description: >-
 
 一次只动一个产品目录。先读那个目录更近的说明。不要把别的产品文案抄过来。
 
-做界面先读 [taste.md](taste.md) 和 [preview.md](preview.md)。做壳和白屏先读 [shell.md](shell.md)。图标读 [icons.md](icons.md)。介绍图读 [shots.md](shots.md)。填商店先读 [agc.md](agc.md)。隐私标签读 [privacy-label.md](privacy-label.md)。签名前用 [rejects.md](rejects.md) 过一遍。已做过的产品只作对照，读 [products.md](products.md)。
+做界面先读 [taste.md](taste.md) 和 [preview.md](preview.md)。名字没定先读 [naming.md](naming.md)，给出 10 个名称和包名，等他圈一个再写进工程。做壳和白屏先读 [shell.md](shell.md)。图标读 [icons.md](icons.md)。介绍图读 [shots.md](shots.md)。填商店先读 [agc.md](agc.md)。隐私标签读 [privacy-label.md](privacy-label.md)。签名前用 [rejects.md](rejects.md) 过一遍。已做过的产品只作对照，读 [products.md](products.md)。
 
 ## 锁死的默认
 
 - 界面做成网页，放进鸿蒙壳。他亲口说「原生 / ArkTS」才写 `.ets` 界面。
 - 单机。不申请 `INTERNET`。数据只在这台手机。
 - 最低鸿蒙 5：`compatibleSdkVersion` `5.0.0(12)`，`targetSdkVersion` `26.0.0`。
-- 包名：`com.qisaijun.<短拼音>.hmos`。已有品牌的沿用旧包名（锻体、领宠、想吃先停见 products.md）。
+- 包名：他圈定的那个。没圈定之前按 [naming.md](naming.md) 先给 10 个。已有品牌的沿用旧包名（锻体、领宠、想吃先停见 products.md）。新的一律 `com.qisaijun.<拼音>.hmos`，不以 `.huawei` 结尾。
 - 版本第一版 `1.0.0`，`versionCode` `1000000`。
 - 开发者名用真人：齐赛军。电话邮箱等他亲口给，不编。
 - 签名：锻体那把发布证书（`D:\APP\zhugu\.sdks\harmony-sign\duanti.p12`，别名 `duanti`）。每个应用自己的发布 `.p7b`。口令在 `password.txt`，读来用，**禁止打印、禁止进 git**。
