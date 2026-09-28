@@ -26,7 +26,7 @@
 | products.md | 已做产品的目录和包名 |
 | defaults.json | 本机 DevEco、证书路径。不含口令 |
 | scripts/write-listing.mjs | 一次写出一句话、介绍和 AGC 填写 |
-| scripts/publish-privacy.mjs | 推到 GitHub Pages，得到 https://bigq749.github.io/名字-privacy/ |
+| scripts/publish-privacy.mjs | 仅在主人明确要求自有隐私网站时使用；AGC 托管填写内容由 write-listing.mjs 生成 |
 | scripts/store-posters.mjs | 按真界面套手机框，出 1080×1920 介绍图 |
 | store/app.example.json | 上面脚本的例子 |
 

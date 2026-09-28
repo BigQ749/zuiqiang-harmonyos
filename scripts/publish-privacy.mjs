@@ -10,6 +10,10 @@ if (!file) {
 }
 
 const app = JSON.parse(fs.readFileSync(file, "utf8"));
+if (app.customPrivacySite !== true) {
+  console.error("默认使用 AGC 隐私托管。只有主人明确要求自有隐私网站时，才在 app.json 中显式设置 customPrivacySite: true。");
+  process.exit(1);
+}
 if (!app.privacyRepo || !/^[a-z0-9]+-privacy$/.test(app.privacyRepo)) {
   console.error("privacyRepo 要像 bianyi-privacy");
   process.exit(1);

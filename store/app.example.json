@@ -4,7 +4,16 @@
   "category": "便捷生活",
   "oneLine": "打开就能把这件事做完",
   "intro": "这是给自己用的本机记录。打开就能看到当前这件事。写下的内容只留在这台手机里，不上传，不需要注册。",
-  "dataItems": ["你写下的文字", "日期"],
-  "privacyRepo": "example-privacy",
+  "features": "查看和编辑本机记录",
+  "dataCategory": "其他信息",
+  "dataItems": ["用户主动填写的记录文本", "用户选择的日期"],
+  "privacyPurpose": "仅用于在本机查看、编辑和保存用户主动创建的记录",
+  "noInfoImpact": "无法创建或查看对应记录",
+  "localOnly": true,
+  "retentionMode": "minimum",
+  "retentionDetails": "记录保存在本机应用数据中，直至用户在应用内删除或卸载应用；临时处理数据仅在完成对应操作所需时间内保留。",
+  "serviceMode": {
+    "enabled": false
+  },
   "firstVersion": "可以记下这件事，记录只留在这台手机。"
 }

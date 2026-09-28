@@ -15,7 +15,7 @@
 | 边译 | `D:\APP\bianyi` | `com.qisaijun.bianyi.hmos` | 屏幕边上的翻译，不自动发消息 |
 | 楚汉 | `D:\APP\chuhan` | `com.qisaijun.chuhan.hmos` | 本地棋局 |
 
-隐私页仓库都在 `BigQ749/<名字>-privacy`，例如 `lingchong-privacy`、`duanti-privacy`、`yuexin-privacy`、`keshi-privacy`、`xiajieke-privacy`。
+领宠、锻体、月信、课时、下节课等旧项目已有自建隐私页仓库，仅作历史记录。新项目默认使用 AGC 隐私托管，不复制旧链接、不新建 GitHub Pages 隐私站点，除非主人明确要求自有网站。
 
 ## 各家踩坑，新应用禁止再犯
 
