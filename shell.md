@@ -22,7 +22,7 @@ rawfile 里的 `index.html` 必须长这样（脚本在 `#root` 后面）：
 <body>
 <div id="root">正在打开…</div>
 <script>
-window.MessageChannel = undefined;
+// 默认保留 MessageChannel；仅经目标 ArkWeb 复现调度故障后，在专用构建中有界启用回退。
 window.addEventListener("error", function (e) {
   var el = document.getElementById("root");
   if (!el || el.dataset.ok) return;
@@ -34,18 +34,18 @@ window.addEventListener("error", function (e) {
 </html>
 ```
 
-`MessageChannel` 必须在 `app.js` 之前清掉。鸿蒙浏览器里它不回调，React 会永远停在白屏。  
+不要无条件删除 `MessageChannel`。先记录目标 OS、ArkWeb、框架版本并复现回调/调度错误；只有确认此机制导致启动失败，才在该目标构建、业务脚本之前使用有条件的兼容回退并验证副作用。其他消息桥或库可能依赖它。  
 脚本若放在 `head` 里又去掉 `type="module"`，`#root` 还不存在，也会白屏。
 
 页面跑起来后给 `#root` 写上 `dataset.ok = "1"`，避免后来的小错误把整页换成报错字。
 
 ## ArkWeb
 
-- `javaScriptAccess`、`domStorageAccess`、`fileAccess`、`imageAccess`、`databaseAccess` 开。
-- **不要** `onlineImageAccess(false)`。关掉后连 data 图和包内图一起没。
+- 仅按实际用途开启脚本、存储和图片等能力；逐项核对当前 SDK 开关语义，不统一打开文件、数据库、网络图片和混合内容。
+- `onlineImageAccess` 控制网络图片，不把包内/data 图片故障一律归因为它；检查真实来源、资源路径和解码失败，按当前 SDK 文档及目标设备验证。
 - 全屏，状态栏颜色跟纸色 `#F7F6F3`，字色 `#161815`。
 - 把系统上沿、下沿写成 `--sat`、`--sab`。
-- 本地模型、大文件不要用 `fetch('resource://...')`。改请求 `https://<产品>.local/...`，在 `onInterceptRequest` 里用 `getRawFileContentSync` 把字节塞回去，并 `onSslErrorEvent` 只放行这个域名。
+- 本地资源按当前 ArkWeb 官方支持的来源和资源拦截方案加载；桥接限定本应用可信来源。不得通过 `onSslErrorEvent.handleConfirm()` 忽略证书错误来营造安全上下文；旧 origin 迁移需保护 IndexedDB 等数据。
 
 ## 画面画不出（只剩一块底色）
 
