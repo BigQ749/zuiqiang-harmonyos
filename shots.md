@@ -1,3 +1,5 @@
+> 2026-10-21：本文是历史实现参考。当前发布/自检规则见 [交付契约](references/release-contract.md) 和 [AGC 草稿流程](references/agc-drafts.md)，权限/政策见 [隐私与权限](references/privacy-permissions.md)。固定尺寸、固定 API/盘符、单机无权限、两份协议必建和不做云测等旧假设不得覆盖实际产品与当前要求。
+
 # 介绍图
 
 商店「手机竖图」用本技能里的脚本，不要交整屏裸截图。

@@ -1,3 +1,5 @@
+> 2026-10-21：本文是历史实现参考。当前发布/自检规则见 [交付契约](references/release-contract.md) 和 [AGC 草稿流程](references/agc-drafts.md)，权限/政策见 [隐私与权限](references/privacy-permissions.md)。固定尺寸、固定 API/盘符、单机无权限、两份协议必建和不做云测等旧假设不得覆盖实际产品与当前要求。
+
 # 壳：怎么才不会白屏、卡死、画不出
 
 锻体、领宠、下节课已经踩过。新应用直接抄，不要再试模块脚本。
