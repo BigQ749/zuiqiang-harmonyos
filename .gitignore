@@ -1,5 +1,13 @@
 node_modules/
+.DS_Store
+Thumbs.db
+.sdks/
 *.p12
 *.p7b
-password.txt
 *.cer
+*.csr
+password.txt
+.env
+.env.*
+__pycache__/
+*.pyc

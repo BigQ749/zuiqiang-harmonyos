@@ -1,0 +1,6 @@
+interface:
+  display_name: "最强鸿蒙 · 社交宣传图册"
+  short_description: "根据产品主题选择视觉风格，以真实界面制作宣传图册，支持旧图替换与 Canva 编辑"
+  default_prompt: "使用最强鸿蒙开发技能的宣传图册流程，为这个鸿蒙 App 制作适合社交媒体的宣传图册，根据它的主题与功能选择风格、配色和构图，并确认展示版本。"
+policy:
+  allow_implicit_invocation: true

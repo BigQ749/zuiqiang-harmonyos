@@ -1,6 +1,6 @@
 # 最强鸿蒙开发
 
-给齐赛军用的鸿蒙应用技能。说出要求之后，按已经做过的下节课、锻体、领宠、月信、正确时刻、想吃先停、场记、课时，直接做出能上架的单机 App。
+给齐赛军用的鸿蒙应用技能。说出要求之后，按已经做过的下节课、锻体、领宠、月信、正确时刻、想吃先停、场记、课时，直接做出能上架的单机 App；同一技能也覆盖 **AGC 上架作业单** 和 **社交宣传图册**。
 
 ## 装到 Cursor
 
@@ -8,26 +8,29 @@
 
 `C:\Users\齐赛军\.cursor\skills\最强鸿蒙开发`
 
-## 里面有什么
+## 三块能力
 
-| 文件 | 干什么 |
+| 目录 / 文件 | 干什么 |
 |---|---|
-| SKILL.md | 接到要求后怎么做，默认全部锁死 |
-| taste.md | 界面喜好：纸色、松绿、浮起的底栏、新用户第一屏 |
-| styles.md | iOS 风格一底栏黑药丸，风格二顶栏展开，风格三是两者合成 |
-| preview.md | 电脑上打开要像一台鸿蒙真机 |
-| shell.md | 白屏、画不出、卡顿的已验证做法 |
-| icons.md | 直角 216 / 1024，和包内同一张 |
-| shots.md | 1080×1920 介绍图，同一只手机框 |
-| agc.md | 华为后台每一栏、一句话、介绍怎么填 |
-| naming.md | 10 个应用名和对应包名，按他的起名习惯 |
-| privacy-label.md | 是否收集个人信息、业务场景、数据项 |
-| rejects.md | 以前被打回的错，签名前必查 |
-| products.md | 已做产品的目录和包名 |
-| defaults.json | 本机 DevEco、证书路径。不含口令 |
-| scripts/write-listing.mjs | 一次写出一句话、介绍和 AGC 填写 |
-| scripts/publish-privacy.mjs | 仅在主人明确要求自有隐私网站时使用；AGC 托管填写内容由 write-listing.mjs 生成 |
-| scripts/store-posters.mjs | 按真界面套手机框，出 1080×1920 介绍图 |
-| store/app.example.json | 上面脚本的例子 |
+| **SKILL.md** | 总入口：开发同一轮做到哪 + 链到上架与宣传 |
+| taste / styles / preview / shell | 界面与壳 |
+| icons / shots / agc / naming / privacy-label / rejects | 图标、商店介绍图、AGC 栏、起名、隐私标签、打回清单 |
+| products.md · defaults.json | 已做产品对照、本机路径（不含口令） |
+| scripts/ | write-listing · publish-privacy · store-posters |
+| **publish/** | 上架作业单、签名、错误码、云测、历史踩坑（自 harmony-app-publish-skill） |
+| **promo/** | 社交宣传图册流程与视觉/制作参考（自 harmony-social-promo-skill） |
+| references/ | 交付契约、AGC 草稿、隐私权限、运行专项、案例台账 |
 
 口令、p12、p7b 不在这个仓库里。
+
+## 来源
+
+- 本仓库原「最强鸿蒙开发」主体
+- [harmony-app-publish-skill](https://github.com/BigQ749/harmony-app-publish-skill) → `publish/`
+- [harmony-social-promo-skill](https://github.com/BigQ749/harmony-social-promo-skill) → `promo/`
+
+源仓库未删除，可继续单独引用。
+
+## 触发说法
+
+「做鸿蒙 App」「最强鸿蒙」「上华为应用市场」「打 HAP/APP」「992」「发布证书」「给这个 App 做一套社交宣传图册」
